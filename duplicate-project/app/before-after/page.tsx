@@ -320,7 +320,7 @@ export default function BeforeAfterPage() {
                 Pico Laser
               </h2>
               <p className="text-xl text-rose-gold font-medium mb-2">
-                บอกลารอยสิว เพียง ฿1,899
+                บอกลารอยสิว เ���ียง ฿1,899
               </p>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 รักษารอยสิว ผิวเรียบเนียน ผลลัพธ์เห็นได้ชัด
@@ -414,22 +414,6 @@ export default function BeforeAfterPage() {
                   <div>
                     <p className="font-medium">Natural Lifting</p>
                     <p className="text-sm text-muted-foreground">Smooth fine lines</p>
-                  </div>
-                </div>
-              </div>
-                </div>
-                <div className="flex items-center gap-4 p-4 bg-white rounded-lg border border-border hover:border-rose-gold transition-colors duration-300">
-                  <div className="w-10 h-10 bg-rose-gold text-white rounded-full flex items-center justify-center font-bold shrink-0">2</div>
-                  <div>
-                    <p className="font-medium">Sisi Face Mesoi Fat</p>
-                    <p className="text-sm text-muted-foreground">1 bottle - Fat dissolving</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4 p-4 bg-white rounded-lg border border-border hover:border-rose-gold transition-colors duration-300">
-                  <div className="w-10 h-10 bg-rose-gold text-white rounded-full flex items-center justify-center font-bold shrink-0">3</div>
-                  <div>
-                    <p className="font-medium">Lifting Botox</p>
-                    <p className="text-sm text-muted-foreground">20 units - Jawline contouring</p>
                   </div>
                 </div>
               </div>
