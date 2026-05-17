@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer"
 import { LineButton } from "@/components/line-button"
 import { SectionHeader } from "@/components/section-header"
 import { TestimonialCard } from "@/components/testimonial-card"
-import { Star, MapPin, ArrowRight, Sparkles, Shield, Heart, ChevronLeft, ChevronRight } from "lucide-react"
+import { Star, MapPin, ArrowRight, Sparkles, Shield, Heart, ChevronLeft, ChevronRight, Phone } from "lucide-react"
 
 const heroSlides = [
   {
