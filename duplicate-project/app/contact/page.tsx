@@ -5,24 +5,23 @@ import Image from "next/image"
 import { useState } from "react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { LineButton } from "@/components/line-button"
 import { MapPin, Phone, Clock, MessageCircle, Stethoscope, Shield, FileText } from "lucide-react"
 
 const contactMethods = [
   {
-    icon: MessageCircle,
-    title: "LINE Us",
-    value: "@revizeclinic",
-  },
-  {
     icon: Phone,
     title: "Call Us",
-    value: "061-361-2020",
+    value: "098-854-5623",
   },
   {
     icon: Clock,
     title: "Open Daily",
     value: "10:00 – 20:00",
+  },
+  {
+    icon: MapPin,
+    title: "Location",
+    value: "Times Square, FL2",
   },
 ]
 
@@ -30,7 +29,7 @@ const valueProps = [
   {
     icon: MessageCircle,
     title: "Quick Reply",
-    description: "We reply on LINE within minutes",
+    description: "We reply within minutes",
   },
   {
     icon: Stethoscope,
@@ -47,13 +46,6 @@ const valueProps = [
     title: "Personalized Plan",
     description: "Tailored treatment plan just for you",
   },
-]
-
-const clinicImages = [
-  { title: "Reception" },
-  { title: "Treatment Room" },
-  { title: "Consultation" },
-  { title: "Lounge" },
 ]
 
 export default function ContactPage() {
@@ -81,11 +73,11 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-0">
             {/* Left Content */}
             <div className="flex flex-col justify-center px-6 sm:px-8 lg:px-12 py-12 lg:py-16 order-2 lg:order-1">
-              <p className="text-xs tracking-[0.2em] text-teal uppercase mb-4">
+              <p className="text-xs tracking-[0.2em] text-rose-gold uppercase mb-4">
                 We&apos;d Love to Hear From You
               </p>
               
-              <h1 className="text-4xl sm:text-5xl font-serif text-navy leading-tight mb-6 text-balance">
+              <h1 className="text-4xl sm:text-5xl font-serif text-charcoal leading-tight mb-6 text-balance">
                 Let&apos;s create your best version.
               </h1>
               
@@ -96,8 +88,8 @@ export default function ContactPage() {
               <div className="grid grid-cols-3 gap-4">
                 {contactMethods.map((method, index) => (
                   <div key={index} className="text-center">
-                    <div className="w-12 h-12 mx-auto mb-3 rounded-full border border-teal flex items-center justify-center">
-                      <method.icon className="w-5 h-5 text-teal" />
+                    <div className="w-12 h-12 mx-auto mb-3 rounded-full border border-rose-gold flex items-center justify-center">
+                      <method.icon className="w-5 h-5 text-rose-gold" />
                     </div>
                     <p className="text-xs text-muted-foreground">{method.title}</p>
                     <p className="text-sm font-medium text-foreground">{method.value}</p>
@@ -106,22 +98,15 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Right Image Placeholder */}
-            <div className="relative min-h-[300px] lg:min-h-[400px] order-1 lg:order-2 bg-gradient-to-br from-teal/5 via-cream to-teal/10">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-16%20at%2017.41.31-TSh68SpfdoqKyV2R6cULWu9IbMVh9s.png"
-                    alt="REVIZE Logo"
-                    width={100}
-                    height={100}
-                    className="rounded-full mx-auto mb-6"
-                  />
-                  <span className="text-2xl tracking-wide text-navy font-sans font-semibold block mb-2">REVIZE</span>
-                  <p className="text-xs tracking-[0.2em] text-muted-foreground">CLINIC ASOK</p>
-                  <p className="text-sm text-muted-foreground mt-6">Reception Placeholder</p>
-                </div>
-              </div>
+            {/* Right Image - Clinic Interior */}
+            <div className="relative min-h-[300px] lg:min-h-[400px] order-1 lg:order-2">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/8-BnoouyqZ4eVLkmN7pw6zQw9pUM5Uc5.png"
+                alt="MATRIX Clinic Interior"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background/20"></div>
             </div>
           </div>
         </div>
@@ -133,7 +118,7 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <p className="text-xs tracking-[0.2em] text-teal uppercase mb-3">
+              <p className="text-xs tracking-[0.2em] text-rose-gold uppercase mb-3">
                 Send Us a Message
               </p>
               <p className="text-muted-foreground mb-8">
@@ -147,14 +132,14 @@ export default function ContactPage() {
                     placeholder="Full Name"
                     value={formData.fullName}
                     onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:border-teal transition-colors"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:border-rose-gold transition-colors"
                   />
                   <input
                     type="tel"
                     placeholder="Phone Number"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:border-teal transition-colors"
+                    className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:border-rose-gold transition-colors"
                   />
                 </div>
 
@@ -163,16 +148,15 @@ export default function ContactPage() {
                   placeholder="Email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:border-teal transition-colors"
+                  className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:border-rose-gold transition-colors"
                 />
 
                 <select
                   value={formData.contactMethod}
                   onChange={(e) => setFormData({ ...formData, contactMethod: e.target.value })}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:border-teal transition-colors text-muted-foreground"
+                  className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:border-rose-gold transition-colors text-muted-foreground"
                 >
                   <option value="">Preferred Contact Method</option>
-                  <option value="line">LINE</option>
                   <option value="phone">Phone</option>
                   <option value="email">Email</option>
                 </select>
@@ -182,7 +166,7 @@ export default function ContactPage() {
                   rows={4}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:border-teal transition-colors resize-none"
+                  className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:border-rose-gold transition-colors resize-none"
                 />
 
                 <label className="flex items-start gap-3 cursor-pointer">
@@ -190,69 +174,84 @@ export default function ContactPage() {
                     type="checkbox"
                     checked={formData.agreed}
                     onChange={(e) => setFormData({ ...formData, agreed: e.target.checked })}
-                    className="mt-1 w-4 h-4 rounded border-border text-teal focus:ring-teal"
+                    className="mt-1 w-4 h-4 rounded border-border text-rose-gold focus:ring-rose-gold"
                   />
                   <span className="text-sm text-muted-foreground">
-                    I agree to the <Link href="#" className="underline hover:text-teal">Privacy Policy</Link> and <Link href="#" className="underline hover:text-teal">Terms of Service</Link>.
+                    I agree to the <Link href="#" className="underline hover:text-rose-gold">Privacy Policy</Link> and <Link href="#" className="underline hover:text-rose-gold">Terms of Service</Link>.
                   </span>
                 </label>
 
-                <LineButton size="lg" className="w-full justify-center">
-                  Send on LINE
-                </LineButton>
+                <Link 
+                  href="tel:0988545623" 
+                  className="w-full flex items-center justify-center gap-2 bg-rose-gold hover:bg-rose-gold-dark text-white px-6 py-3 rounded btn-luxury"
+                >
+                  <Phone className="w-4 h-4" />
+                  โทรนัดหมาย 098-854-5623
+                </Link>
 
                 <p className="text-sm text-muted-foreground text-center">
-                  or call us at 061-361-2020
+                  หรือเดินทางมาพบเราได้ที่คลินิก
                 </p>
               </form>
             </div>
 
             {/* Location Info */}
             <div>
-              <p className="text-xs tracking-[0.2em] text-teal uppercase mb-3">
+              <p className="text-xs tracking-[0.2em] text-rose-gold uppercase mb-3">
                 Visit Our Clinic
               </p>
-              <h3 className="text-2xl font-serif text-navy mb-4">
-                REVIZE Clinic Asok
+              <h3 className="text-2xl font-serif text-charcoal mb-4">
+                MATRIX Clinic
               </h3>
 
               <div className="space-y-4 mb-6">
                 <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-teal shrink-0 mt-0.5" />
+                  <MapPin className="w-5 h-5 text-rose-gold shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-sm text-foreground">REVIZE Clinic Asok</p>
+                    <p className="text-sm text-foreground">MATRIX Clinic</p>
                     <p className="text-sm text-muted-foreground">
-                      Times Square 1FL<br />
-                      Next to Starbucks
+                      Times Square Building Mall<br />
+                      ห้องเลขที่ 212 ชั้น 2<br />
+                      246 Sukhumvit Rd, Khlong Toei<br />
+                      Bangkok 10110
                     </p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="w-5 h-5 flex items-center justify-center text-xs font-bold text-teal bg-teal/10 rounded">B</span>
+                  <span className="w-5 h-5 flex items-center justify-center text-xs font-bold text-rose-gold bg-rose-gold/10 rounded">B</span>
                   <p className="text-sm text-muted-foreground">BTS Asok (Exit 6) – 2 min walk</p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="w-5 h-5 flex items-center justify-center text-xs font-bold text-teal bg-teal/10 rounded">M</span>
+                  <span className="w-5 h-5 flex items-center justify-center text-xs font-bold text-rose-gold bg-rose-gold/10 rounded">M</span>
                   <p className="text-sm text-muted-foreground">MRT Sukhumvit – 3 min walk</p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="w-5 h-5 flex items-center justify-center text-xs font-bold text-teal bg-teal/10 rounded">P</span>
+                  <span className="w-5 h-5 flex items-center justify-center text-xs font-bold text-rose-gold bg-rose-gold/10 rounded">P</span>
                   <p className="text-sm text-muted-foreground">Parking Available</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Phone className="w-5 h-5 text-rose-gold" />
+                  <p className="text-sm text-muted-foreground">098-854-5623</p>
                 </div>
               </div>
 
               {/* Map Placeholder */}
-              <div className="relative aspect-[16/10] rounded-lg overflow-hidden bg-gradient-to-br from-teal/5 to-teal/10 border border-border">
+              <div className="relative aspect-[16/10] rounded-lg overflow-hidden bg-gradient-to-br from-rose-gold/5 to-rose-gold/10 border border-border">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
-                    <div className="w-10 h-10 bg-teal rounded-full mx-auto mb-2 flex items-center justify-center">
+                    <div className="w-10 h-10 bg-rose-gold rounded-full mx-auto mb-2 flex items-center justify-center">
                       <MapPin className="w-5 h-5 text-white" />
                     </div>
                     <div className="bg-white rounded-lg px-4 py-2 shadow-lg">
-                      <p className="text-sm font-medium">REVIZE Clinic Asok</p>
-                      <p className="text-xs text-muted-foreground">Times Square 1FL</p>
-                      <p className="text-xs text-muted-foreground">Next to Starbucks</p>
-                      <Link href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="text-xs text-teal hover:underline">
+                      <p className="text-sm font-medium">MATRIX Clinic</p>
+                      <p className="text-xs text-muted-foreground">Times Square Building, FL2</p>
+                      <p className="text-xs text-muted-foreground">246 Sukhumvit Rd</p>
+                      <Link 
+                        href="https://maps.google.com/?q=Times+Square+Building+246+Sukhumvit+Rd+Khlong+Toei+Bangkok" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-xs text-rose-gold hover:underline"
+                      >
                         View on Google Maps
                       </Link>
                     </div>
@@ -265,16 +264,16 @@ export default function ContactPage() {
       </section>
 
       {/* Value Props */}
-      <section className="py-12 bg-gradient-to-br from-teal/5 to-teal/10">
+      <section className="py-12 bg-gradient-to-br from-rose-gold/5 to-rose-gold/10">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {valueProps.map((prop, index) => (
               <div key={index} className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-teal/10 flex items-center justify-center shrink-0">
-                  <prop.icon className="w-5 h-5 text-teal" />
+                <div className="w-12 h-12 rounded-full bg-rose-gold/10 flex items-center justify-center shrink-0">
+                  <prop.icon className="w-5 h-5 text-rose-gold" />
                 </div>
                 <div>
-                  <p className="text-xs tracking-[0.1em] text-teal uppercase mb-1">
+                  <p className="text-xs tracking-[0.1em] text-rose-gold uppercase mb-1">
                     {prop.title}
                   </p>
                   <p className="text-sm text-muted-foreground">
@@ -291,23 +290,46 @@ export default function ContactPage() {
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {clinicImages.map((image, index) => (
-              <div key={index} className="relative aspect-[4/3] rounded-lg overflow-hidden bg-gradient-to-br from-teal/5 to-teal/10">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <Image
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-16%20at%2017.41.31-TSh68SpfdoqKyV2R6cULWu9IbMVh9s.png"
-                      alt="REVIZE Logo"
-                      width={30}
-                      height={30}
-                      className="rounded-full mx-auto mb-2"
-                    />
-                    <span className="text-sm tracking-wide text-navy font-sans font-semibold">REVIZE</span>
-                    <p className="text-xs text-muted-foreground mt-1">{image.title}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
+            <div className="relative aspect-[4/3] rounded-lg overflow-hidden col-span-2 row-span-2">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/8-BnoouyqZ4eVLkmN7pw6zQw9pUM5Uc5.png"
+                alt="MATRIX Clinic Interior"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.43.21-VjvCXHJsCLcZ0HqjlxRZ46p9u4oLcK.png"
+                alt="MATRIX Treatments"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.44.45-LaTRcGZBu1oyP1036fSCeWOX7Fddxm.png"
+                alt="Sculpt & Collagen Program"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.45.38-ycls4AGsJmFp33hisSoseNxANitwNn.png"
+                alt="Before After Results"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/482139185_1057097646224927_7823904874730714511_n-qJ2vl7nFqAEOAeF9sgLz6s8bsIGXKi.jpg"
+                alt="MATRIX Brand"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

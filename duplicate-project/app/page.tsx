@@ -8,45 +8,45 @@ import { Footer } from "@/components/footer"
 import { LineButton } from "@/components/line-button"
 import { SectionHeader } from "@/components/section-header"
 import { TestimonialCard } from "@/components/testimonial-card"
-import { Star, MapPin, ArrowRight, Sparkles, Shield, Heart, ChevronLeft, ChevronRight } from "lucide-react"
+import { Star, MapPin, ArrowRight, Sparkles, Shield, Heart, ChevronLeft, ChevronRight, Phone } from "lucide-react"
 
 const heroSlides = [
   {
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/659014755_948772930869003_6740018651243625603_n-AcCedmHCdriEy4n62TLj2Qce0K3obY.jpg",
-    title: "Chin Filler",
-    subtitle: "Balanced jawline, natural results",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.45.38-ycls4AGsJmFp33hisSoseNxANitwNn.png",
+    title: "Program Neura 4cc",
+    subtitle: "Natural facial rejuvenation",
   },
   {
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-16%20at%2017.39.35.png-4S6rOVqXzbbpsIi6DuesHGOSFOwG9E.jpeg",
-    title: "Under Eyes Filler",
-    subtitle: "Look refreshed, naturally",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.45.14-QKz4SMhuQqDAZbQFXocqagHd4r01nY.png",
+    title: "Program Juvé 2cc",
+    subtitle: "Natural enhancement for all",
   },
   {
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-16%20at%2018.13.09-tkFlEhEyFNqP5F86ezFAAwnB2VlNl1.png",
-    title: "Skin Rejuvenation",
-    subtitle: "Smoother, brighter skin",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.44.45-LaTRcGZBu1oyP1036fSCeWOX7Fddxm.png",
+    title: "Sculpt & Collagen",
+    subtitle: "Lift, tighten, rejuvenate",
   },
 ]
 
 const beforeAfterResults = [
   { 
-    title: "Chin Filler", 
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/659014755_948772930869003_6740018651243625603_n-AcCedmHCdriEy4n62TLj2Qce0K3obY.jpg",
+    title: "Neura Program", 
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.45.38-ycls4AGsJmFp33hisSoseNxANitwNn.png",
     hasImage: true 
   },
   { 
-    title: "Under Eye Filler", 
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-16%20at%2017.39.35.png-4S6rOVqXzbbpsIi6DuesHGOSFOwG9E.jpeg",
+    title: "Filler Treatment", 
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.45.53-RAcrOnallJeaC4CppIrhPa3KMqlrQQ.png",
     hasImage: true 
   },
   { 
-    title: "Skin Rejuvenation", 
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-16%20at%2018.13.09-tkFlEhEyFNqP5F86ezFAAwnB2VlNl1.png",
+    title: "Juvé Program", 
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.45.14-QKz4SMhuQqDAZbQFXocqagHd4r01nY.png",
     hasImage: true 
   },
   { 
-    title: "Sculptra", 
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-16%20at%2017.47.49-8BUSTG51yKUg8vczwf4eNFSotmOP8b.png",
+    title: "Acne Treatment", 
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.44.58-84gfwT3Z8zs82GIla8zF4w6tbZHmWh.png",
     hasImage: true 
   },
 ]
@@ -55,6 +55,15 @@ const features = [
   { icon: Sparkles, title: "Natural Results", desc: "Enhance, never overdone" },
   { icon: Shield, title: "Doctor-Led", desc: "Medical expertise always" },
   { icon: Heart, title: "Personalized", desc: "Tailored to your goals" },
+]
+
+const promotions = [
+  { title: "Laser Hair Removal", price: "390", desc: "Safe, fast, almost painless" },
+  { title: "Immune Booster Drip", price: "990", desc: "Strengthen immunity" },
+  { title: "PRP Hair Regeneration", price: "2,900", desc: "Activate follicles" },
+  { title: "Holiday Rejuvenation", price: "7,999", desc: "Glow facial, lift & firm" },
+  { title: "Facial Lift & Tighten", price: "8,999", desc: "Reshape contours" },
+  { title: "Matrix Glass Skin", price: "9,999", desc: "Hydrated glow" },
 ]
 
 export default function HomePage() {
@@ -81,14 +90,14 @@ export default function HomePage() {
             {/* Left Content */}
             <div className="flex flex-col justify-center px-6 sm:px-8 lg:px-12 py-12 lg:py-20 order-2 lg:order-1 relative z-10">
               <div className="animate-fade-in-up">
-                <p className="text-xs tracking-[0.3em] text-teal uppercase mb-6 flex items-center gap-2">
-                  <span className="w-8 h-[1px] bg-teal"></span>
-                  Natural Lifting . V-Shape . Glass Skin
+                <p className="text-xs tracking-[0.3em] text-rose-gold uppercase mb-6 flex items-center gap-2">
+                  <span className="w-8 h-[1px] bg-rose-gold"></span>
+                  The Freedom of Beauty
                 </p>
               </div>
               
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-navy leading-[1.1] mb-6 text-balance animate-fade-in-up delay-100">
-                Premium aesthetic care for brighter skin and natural facial balance.
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-charcoal leading-[1.1] mb-6 text-balance animate-fade-in-up delay-100">
+                Premium aesthetic care for natural beauty and confidence.
               </h1>
               
               <p className="text-muted-foreground text-lg mb-8 max-w-md leading-relaxed animate-fade-in-up delay-200">
@@ -99,8 +108,8 @@ export default function HomePage() {
               <div className="flex flex-wrap gap-6 mb-8 animate-fade-in-up delay-300">
                 {features.map((feature, i) => (
                   <div key={i} className="flex items-center gap-2 text-sm">
-                    <div className="w-8 h-8 rounded-full bg-teal/10 flex items-center justify-center">
-                      <feature.icon className="w-4 h-4 text-teal" />
+                    <div className="w-8 h-8 rounded-full bg-rose-gold/10 flex items-center justify-center">
+                      <feature.icon className="w-4 h-4 text-rose-gold" />
                     </div>
                     <div>
                       <p className="font-medium text-foreground">{feature.title}</p>
@@ -111,10 +120,16 @@ export default function HomePage() {
               </div>
 
               <div className="flex flex-wrap gap-4 mb-8 animate-fade-in-up delay-400">
-                <LineButton size="lg" className="btn-luxury" />
+                <Link 
+                  href="tel:0988545623" 
+                  className="inline-flex items-center gap-2 bg-rose-gold hover:bg-rose-gold-dark text-white px-6 py-3 rounded btn-luxury"
+                >
+                  <Phone className="w-4 h-4" />
+                  โทรนัดหมาย 098-854-5623
+                </Link>
                 <Link 
                   href="/before-after" 
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded border border-border hover:border-teal bg-white text-foreground transition-luxury group"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded border border-border hover:border-rose-gold bg-white text-foreground transition-luxury group"
                 >
                   See Before & After
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
@@ -124,7 +139,7 @@ export default function HomePage() {
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground animate-fade-in-up delay-500">
                 <div className="flex items-center gap-1">
                   {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-teal text-teal" />
+                    <Star key={i} className="w-4 h-4 fill-warm-gold text-warm-gold" />
                   ))}
                 </div>
                 <span><strong className="text-foreground">5.0</strong> Google Reviews</span>
@@ -132,8 +147,8 @@ export default function HomePage() {
                 <span>500+ clients</span>
                 <span className="w-1 h-1 rounded-full bg-muted-foreground hidden sm:block"></span>
                 <div className="hidden sm:flex items-center gap-1.5">
-                  <MapPin className="w-4 h-4 text-teal" />
-                  <span>Near BTS Asok</span>
+                  <MapPin className="w-4 h-4 text-rose-gold" />
+                  <span>Times Square, Sukhumvit</span>
                 </div>
               </div>
             </div>
@@ -171,19 +186,19 @@ export default function HomePage() {
                     onClick={prevSlide}
                     className="w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-all duration-300 hover:scale-110 shadow-lg"
                   >
-                    <ChevronLeft className="w-5 h-5 text-navy" />
+                    <ChevronLeft className="w-5 h-5 text-charcoal" />
                   </button>
                   <button 
                     onClick={nextSlide}
                     className="w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center hover:bg-white transition-all duration-300 hover:scale-110 shadow-lg"
                   >
-                    <ChevronRight className="w-5 h-5 text-navy" />
+                    <ChevronRight className="w-5 h-5 text-charcoal" />
                   </button>
                 </div>
                 
                 {/* Slide Info */}
                 <div className="bg-white/95 backdrop-blur-sm rounded-xl px-5 py-3 shadow-lg">
-                  <p className="text-sm font-medium text-navy">{heroSlides[currentSlide].title}</p>
+                  <p className="text-sm font-medium text-charcoal">{heroSlides[currentSlide].title}</p>
                   <p className="text-xs text-muted-foreground">{heroSlides[currentSlide].subtitle}</p>
                 </div>
               </div>
@@ -196,7 +211,7 @@ export default function HomePage() {
                     onClick={() => setCurrentSlide(index)}
                     className={`h-1 rounded-full transition-all duration-500 ${
                       index === currentSlide 
-                        ? 'w-8 bg-teal' 
+                        ? 'w-8 bg-rose-gold' 
                         : 'w-2 bg-white/60 hover:bg-white'
                     }`}
                   />
@@ -206,8 +221,8 @@ export default function HomePage() {
               {/* Floating Testimonial */}
               <div className="absolute top-1/2 -translate-y-1/2 right-8 hidden xl:block animate-float">
                 <TestimonialCard
-                  name="คุณแอล"
-                  location="Asok"
+                  name="คุณเอ"
+                  location="Sukhumvit"
                   rating={5}
                   text="ผลลัพธ์เป็นธรรมชาติมากค่ะ แพทย์ให้คำแนะนำดีมาก"
                 />
@@ -217,8 +232,34 @@ export default function HomePage() {
         </div>
 
         {/* Decorative Elements */}
-        <div className="absolute top-20 left-10 w-64 h-64 bg-teal/5 rounded-full blur-3xl pointer-events-none"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-teal/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute top-20 left-10 w-64 h-64 bg-rose-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-rose-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+      </section>
+
+      {/* Promotions Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-cream to-rose-gold/5">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+          <SectionHeader
+            label="Special Promotions"
+            title="Exclusive treatments at special prices"
+            description="Premium treatments with exceptional value."
+          />
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+            {promotions.map((promo, index) => (
+              <div 
+                key={index}
+                className="bg-white rounded-xl p-5 border border-border hover:border-rose-gold hover:shadow-lg transition-all duration-300 group"
+              >
+                <h3 className="text-sm font-medium text-charcoal mb-1 group-hover:text-rose-gold transition-colors">{promo.title}</h3>
+                <p className="text-xs text-muted-foreground mb-3">{promo.desc}</p>
+                <p className="text-2xl font-serif text-rose-gold">
+                  {promo.price}<span className="text-sm ml-1">THB</span>
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Results Section - Real Before/After Images */}
@@ -245,7 +286,7 @@ export default function HomePage() {
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   />
                   {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
                   
                   {/* Content */}
                   <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
@@ -262,7 +303,7 @@ export default function HomePage() {
           <div className="flex justify-center mt-12">
             <Link 
               href="/before-after"
-              className="px-8 py-3 border border-border rounded-full hover:border-teal hover:bg-teal hover:text-white transition-all duration-300 text-sm group inline-flex items-center gap-2"
+              className="px-8 py-3 border border-border rounded-full hover:border-rose-gold hover:bg-rose-gold hover:text-white transition-all duration-300 text-sm group inline-flex items-center gap-2"
             >
               ดูผลลัพธ์เพิ่มเติม
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -272,15 +313,15 @@ export default function HomePage() {
       </section>
 
       {/* Doctor Section */}
-      <section className="py-20 md:py-28 bg-gradient-to-br from-teal/5 via-background to-teal/5 relative overflow-hidden">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-rose-gold/5 via-background to-rose-gold/5 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Doctor Image */}
             <div className="relative order-2 lg:order-1">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl group">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/476150325_1077680777731051_3797646050005656885_n-JCPparzS9I3hqsxc8jlcr1QmMcIoaI.jpg"
-                  alt="Doctor with patient at REVIZE Clinic"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/482139185_1057097646224927_7823904874730714511_n-qJ2vl7nFqAEOAeF9sgLz6s8bsIGXKi.jpg"
+                  alt="MATRIX - The Freedom of Beauty"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -289,7 +330,7 @@ export default function HomePage() {
               {/* Decorative Badge */}
               <div className="absolute -bottom-4 -right-4 bg-white rounded-xl p-4 shadow-xl">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-teal flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-full bg-rose-gold flex items-center justify-center">
                     <Shield className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -302,36 +343,36 @@ export default function HomePage() {
 
             {/* Content */}
             <div className="order-1 lg:order-2">
-              <p className="text-xs tracking-[0.3em] text-teal uppercase mb-4 flex items-center gap-2">
-                <span className="w-8 h-[1px] bg-teal"></span>
-                Meet Your Doctor
+              <p className="text-xs tracking-[0.3em] text-rose-gold uppercase mb-4 flex items-center gap-2">
+                <span className="w-8 h-[1px] bg-rose-gold"></span>
+                The Freedom of Beauty
               </p>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-navy mb-6 text-balance">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal mb-6 text-balance">
                 Expertise you can trust.
               </h2>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                Our doctor brings over 15 years of experience in aesthetic medicine, with advanced training from top institutions worldwide.
+                Our doctors bring extensive experience in aesthetic medicine, with advanced training from top institutions worldwide.
               </p>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Every treatment is personally performed by our medical doctor, ensuring the highest standards of safety and natural-looking results.
+                Every treatment is personally performed by our medical doctors, ensuring the highest standards of safety and natural-looking results.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">
-                <div className="p-4 bg-white rounded-lg border border-border hover:border-teal hover:shadow-lg transition-all duration-300">
-                  <p className="text-2xl font-serif text-teal mb-1">15+</p>
+                <div className="p-4 bg-white rounded-lg border border-border hover:border-rose-gold hover:shadow-lg transition-all duration-300">
+                  <p className="text-2xl font-serif text-rose-gold mb-1">15+</p>
                   <p className="text-sm text-muted-foreground">Years Experience</p>
                 </div>
-                <div className="p-4 bg-white rounded-lg border border-border hover:border-teal hover:shadow-lg transition-all duration-300">
-                  <p className="text-2xl font-serif text-teal mb-1">500+</p>
+                <div className="p-4 bg-white rounded-lg border border-border hover:border-rose-gold hover:shadow-lg transition-all duration-300">
+                  <p className="text-2xl font-serif text-rose-gold mb-1">500+</p>
                   <p className="text-sm text-muted-foreground">Happy Clients</p>
                 </div>
               </div>
 
               <Link 
                 href="/injector"
-                className="inline-flex items-center gap-2 text-teal hover:text-teal-dark transition-colors duration-300 group"
+                className="inline-flex items-center gap-2 text-rose-gold hover:text-rose-gold-dark transition-colors duration-300 group"
               >
-                Learn more about our doctor
+                Learn more about our doctors
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
@@ -347,8 +388,8 @@ export default function HomePage() {
             <div className="relative">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl group">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-OkHFi7reDgbMNcin0BRiOTwLgERVGt.png"
-                  alt="REVIZE Clinic Interior"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/8-BnoouyqZ4eVLkmN7pw6zQw9pUM5Uc5.png"
+                  alt="MATRIX Clinic Interior"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -357,50 +398,50 @@ export default function HomePage() {
 
             {/* Location Info */}
             <div>
-              <p className="text-xs tracking-[0.3em] text-teal uppercase mb-4 flex items-center gap-2">
-                <span className="w-8 h-[1px] bg-teal"></span>
+              <p className="text-xs tracking-[0.3em] text-rose-gold uppercase mb-4 flex items-center gap-2">
+                <span className="w-8 h-[1px] bg-rose-gold"></span>
                 Visit Us
               </p>
-              <h2 className="text-3xl md:text-4xl font-serif text-navy mb-4">
-                Conveniently located in Asok
+              <h2 className="text-3xl md:text-4xl font-serif text-charcoal mb-4">
+                Conveniently located in Sukhumvit
               </h2>
               <p className="text-muted-foreground mb-8 text-lg">
-                เดินทางสะดวก ใจกลางอโศก ใกล้ BTS Asok<br />
-                Times Square 1FL. Next to Starbucks
+                เดินทางสะดวก ใจกลางสุขุมวิท ใกล้ BTS Asok<br />
+                Times Square Building, Floor 2
               </p>
 
               <div className="space-y-4 mb-8">
-                <div className="flex items-start gap-4 p-4 bg-background rounded-lg hover:bg-teal/5 transition-colors duration-300 cursor-pointer">
-                  <div className="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center shrink-0">
-                    <MapPin className="w-5 h-5 text-teal" />
+                <div className="flex items-start gap-4 p-4 bg-background rounded-lg hover:bg-rose-gold/5 transition-colors duration-300 cursor-pointer">
+                  <div className="w-10 h-10 rounded-full bg-rose-gold/10 flex items-center justify-center shrink-0">
+                    <MapPin className="w-5 h-5 text-rose-gold" />
                   </div>
                   <div>
-                    <p className="font-medium text-foreground">REVIZE Clinic Asok</p>
+                    <p className="font-medium text-foreground">MATRIX Clinic</p>
                     <p className="text-sm text-muted-foreground">
-                      Times Square 1FL, Next to Starbucks<br />
-                      Asok, Bangkok
+                      Times Square Building, Room 212, Floor 2<br />
+                      246 Sukhumvit Rd, Khlong Toei, Bangkok 10110
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4 p-4 bg-background rounded-lg hover:bg-teal/5 transition-colors duration-300 cursor-pointer">
-                  <div className="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center shrink-0">
-                    <span className="text-sm font-bold text-teal">B</span>
+                <div className="flex items-center gap-4 p-4 bg-background rounded-lg hover:bg-rose-gold/5 transition-colors duration-300 cursor-pointer">
+                  <div className="w-10 h-10 rounded-full bg-rose-gold/10 flex items-center justify-center shrink-0">
+                    <span className="text-sm font-bold text-rose-gold">B</span>
                   </div>
                   <p className="text-sm text-muted-foreground">BTS Asok ทางออก 6 (เดิน 2 นาที)</p>
                 </div>
-                <div className="flex items-center gap-4 p-4 bg-background rounded-lg hover:bg-teal/5 transition-colors duration-300 cursor-pointer">
-                  <div className="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center shrink-0">
-                    <span className="text-sm font-bold text-teal">M</span>
+                <div className="flex items-center gap-4 p-4 bg-background rounded-lg hover:bg-rose-gold/5 transition-colors duration-300 cursor-pointer">
+                  <div className="w-10 h-10 rounded-full bg-rose-gold/10 flex items-center justify-center shrink-0">
+                    <Phone className="w-5 h-5 text-rose-gold" />
                   </div>
-                  <p className="text-sm text-muted-foreground">MRT Sukhumvit (เดิน 3 นาที)</p>
+                  <p className="text-sm text-muted-foreground">098-854-5623</p>
                 </div>
               </div>
 
               <Link 
-                href="https://maps.google.com"
+                href="https://maps.google.com/?q=Times+Square+Building+246+Sukhumvit+Rd+Khlong+Toei+Bangkok"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-full hover:border-teal hover:bg-teal hover:text-white transition-all duration-300 text-sm group"
+                className="inline-flex items-center gap-2 px-6 py-3 border border-border rounded-full hover:border-rose-gold hover:bg-rose-gold hover:text-white transition-all duration-300 text-sm group"
               >
                 ดูเส้นทางบน Google Maps
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

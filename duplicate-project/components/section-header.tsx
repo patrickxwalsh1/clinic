@@ -16,7 +16,7 @@ export function SectionHeader({ label, title, description, align = "center", cla
       className
     )}>
       {label && (
-        <p className="text-xs tracking-[0.2em] text-teal uppercase mb-3 font-medium">
+        <p className="text-xs tracking-[0.2em] text-rose-gold uppercase mb-3 font-medium">
           {label}
         </p>
       )}

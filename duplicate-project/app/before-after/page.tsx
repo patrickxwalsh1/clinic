@@ -81,11 +81,11 @@ export default function BeforeAfterPage() {
           <div className="grid lg:grid-cols-2 gap-0">
             {/* Left Content */}
             <div className="flex flex-col justify-center px-6 sm:px-8 lg:px-12 py-12 lg:py-16 order-2 lg:order-1">
-              <p className="text-xs tracking-[0.2em] text-teal uppercase mb-4 animate-fade-in-up">
+              <p className="text-xs tracking-[0.2em] text-rose-gold uppercase mb-4 animate-fade-in-up">
                 Before & After
               </p>
               
-              <h1 className="text-4xl sm:text-5xl font-serif text-navy leading-tight mb-4 text-balance animate-fade-in-up delay-100">
+              <h1 className="text-4xl sm:text-5xl font-serif text-charcoal leading-tight mb-4 text-balance animate-fade-in-up delay-100">
                 Real results.<br />
                 Thoughtful, natural beauty.
               </h1>
@@ -97,15 +97,15 @@ export default function BeforeAfterPage() {
 
               <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground mb-8 animate-fade-in-up delay-300">
                 <div className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-teal" />
-                  <span>Asok, Bangkok</span>
+                  <MapPin className="w-4 h-4 text-rose-gold" />
+                  <span>Sukhumvit, Bangkok</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Stethoscope className="w-4 h-4 text-teal" />
+                  <Stethoscope className="w-4 h-4 text-rose-gold" />
                   <span>Doctor-led care</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Users className="w-4 h-4 text-teal" />
+                  <Users className="w-4 h-4 text-rose-gold" />
                   <span>500+ happy clients</span>
                 </div>
               </div>
@@ -114,7 +114,7 @@ export default function BeforeAfterPage() {
                 <LineButton size="lg" />
                 <Link 
                   href="/treatments" 
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded border border-border hover:border-teal bg-white text-foreground transition-all duration-300 group"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded border border-border hover:border-rose-gold bg-white text-foreground transition-all duration-300 group"
                 >
                   View Treatments
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -147,11 +147,11 @@ export default function BeforeAfterPage() {
       </section>
 
       {/* Featured Treatment Highlight */}
-      <section className="py-12 bg-gradient-to-r from-navy to-navy/90">
+      <section className="py-12 bg-gradient-to-r from-charcoal to-charcoal/90">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-center md:text-left">
-              <p className="text-xs tracking-[0.2em] text-teal uppercase mb-2">
+              <p className="text-xs tracking-[0.2em] text-rose-gold uppercase mb-2">
                 Featured Program
               </p>
               <h2 className="text-2xl md:text-3xl font-serif text-white">
@@ -161,15 +161,15 @@ export default function BeforeAfterPage() {
             </div>
             <div className="flex flex-wrap items-center gap-4 md:gap-8">
               <div className="flex items-center gap-2 text-white/80">
-                <Clock className="w-5 h-5 text-teal" />
+                <Clock className="w-5 h-5 text-rose-gold" />
                 <span className="text-sm">30 Minutes</span>
               </div>
               <div className="flex items-center gap-2 text-white/80">
-                <Calendar className="w-5 h-5 text-teal" />
+                <Calendar className="w-5 h-5 text-rose-gold" />
                 <span className="text-sm">Same Day Results</span>
               </div>
               <div className="flex items-center gap-2 text-white/80">
-                <Sparkles className="w-5 h-5 text-teal" />
+                <Sparkles className="w-5 h-5 text-rose-gold" />
                 <span className="text-sm">Natural Look</span>
               </div>
             </div>
@@ -189,8 +189,8 @@ export default function BeforeAfterPage() {
                   onClick={() => setActiveFilter(filter)}
                   className={`px-4 py-2 text-sm rounded-full transition-all duration-300 ${
                     activeFilter === filter
-                      ? "bg-teal text-white shadow-md"
-                      : "bg-cream text-foreground hover:bg-teal/10"
+                      ? "bg-rose-gold text-white shadow-md"
+                      : "bg-cream text-foreground hover:bg-rose-gold/10"
                   }`}
                 >
                   {filter}
@@ -199,7 +199,7 @@ export default function BeforeAfterPage() {
             </div>
             <div className="flex items-center gap-2">
               <span className="text-sm text-muted-foreground">Sort by:</span>
-              <button className="flex items-center gap-1 text-sm text-foreground hover:text-teal transition-colors">
+              <button className="flex items-center gap-1 text-sm text-foreground hover:text-rose-gold transition-colors">
                 Newest
                 <ChevronDown className="w-4 h-4" />
               </button>
@@ -222,11 +222,11 @@ export default function BeforeAfterPage() {
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
                   {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                       <div className="flex flex-wrap gap-2 mb-3">
                         {result.benefits.map((benefit, i) => (
-                          <span key={i} className="text-xs px-2 py-1 bg-teal/80 text-white rounded-full flex items-center gap-1">
+                          <span key={i} className="text-xs px-2 py-1 bg-rose-gold/80 text-white rounded-full flex items-center gap-1">
                             <Check className="w-3 h-3" />
                             {benefit}
                           </span>
@@ -237,10 +237,10 @@ export default function BeforeAfterPage() {
                   </div>
                 </div>
                 <div className="mt-4">
-                  <h3 className="font-medium text-foreground group-hover:text-teal transition-colors duration-300">
+                  <h3 className="font-medium text-foreground group-hover:text-rose-gold transition-colors duration-300">
                     {result.title}
                   </h3>
-                  <p className="text-sm text-teal font-medium">{result.titleThai}</p>
+                  <p className="text-sm text-rose-gold font-medium">{result.titleThai}</p>
                   <p className="text-sm text-muted-foreground mt-1 line-clamp-2">
                     {result.description}
                   </p>
@@ -252,7 +252,7 @@ export default function BeforeAfterPage() {
       </section>
 
       {/* Featured Case - Under Eye Filler */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-cream to-teal/5">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-cream to-rose-gold/5">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Image */}
@@ -267,13 +267,13 @@ export default function BeforeAfterPage() {
 
             {/* Content */}
             <div>
-              <p className="text-xs tracking-[0.2em] text-teal uppercase mb-3">
+              <p className="text-xs tracking-[0.2em] text-rose-gold uppercase mb-3">
                 Featured Treatment
               </p>
-              <h2 className="text-3xl md:text-4xl font-serif text-navy mb-4">
+              <h2 className="text-3xl md:text-4xl font-serif text-charcoal mb-4">
                 Under Eyes Filler Program
               </h2>
-              <p className="text-xl text-teal font-medium mb-2">
+              <p className="text-xl text-rose-gold font-medium mb-2">
                 1cc HA Filler
               </p>
               <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -282,18 +282,18 @@ export default function BeforeAfterPage() {
               </p>
 
               <div className="grid grid-cols-3 gap-4 mb-8">
-                <div className="p-4 bg-white rounded-lg border border-border text-center hover:border-teal transition-colors duration-300">
-                  <Clock className="w-6 h-6 text-teal mx-auto mb-2" />
+                <div className="p-4 bg-white rounded-lg border border-border text-center hover:border-rose-gold transition-colors duration-300">
+                  <Clock className="w-6 h-6 text-rose-gold mx-auto mb-2" />
                   <p className="text-xs text-muted-foreground">Immediate</p>
                   <p className="text-sm font-medium">Results</p>
                 </div>
-                <div className="p-4 bg-white rounded-lg border border-border text-center hover:border-teal transition-colors duration-300">
-                  <Calendar className="w-6 h-6 text-teal mx-auto mb-2" />
+                <div className="p-4 bg-white rounded-lg border border-border text-center hover:border-rose-gold transition-colors duration-300">
+                  <Calendar className="w-6 h-6 text-rose-gold mx-auto mb-2" />
                   <p className="text-xs text-muted-foreground">No</p>
                   <p className="text-sm font-medium">Downtime</p>
                 </div>
-                <div className="p-4 bg-white rounded-lg border border-border text-center hover:border-teal transition-colors duration-300">
-                  <Sparkles className="w-6 h-6 text-teal mx-auto mb-2" />
+                <div className="p-4 bg-white rounded-lg border border-border text-center hover:border-rose-gold transition-colors duration-300">
+                  <Sparkles className="w-6 h-6 text-rose-gold mx-auto mb-2" />
                   <p className="text-xs text-muted-foreground">Natural</p>
                   <p className="text-sm font-medium">Look</p>
                 </div>
@@ -313,13 +313,13 @@ export default function BeforeAfterPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Content */}
             <div className="order-2 lg:order-1">
-              <p className="text-xs tracking-[0.2em] text-teal uppercase mb-3">
+              <p className="text-xs tracking-[0.2em] text-rose-gold uppercase mb-3">
                 Skin Treatment
               </p>
-              <h2 className="text-3xl md:text-4xl font-serif text-navy mb-4">
+              <h2 className="text-3xl md:text-4xl font-serif text-charcoal mb-4">
                 Skin Rejuvenation
               </h2>
-              <p className="text-xl text-teal font-medium mb-2">
+              <p className="text-xl text-rose-gold font-medium mb-2">
                 รีวิวจากผู้ใช้บริการจริง
               </p>
               <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -330,8 +330,8 @@ export default function BeforeAfterPage() {
               <div className="space-y-3 mb-8">
                 {["Smoother skin texture", "Reduced pore size", "Even skin tone", "Natural glow"].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full bg-teal/10 flex items-center justify-center">
-                      <Check className="w-4 h-4 text-teal" />
+                    <div className="w-6 h-6 rounded-full bg-rose-gold/10 flex items-center justify-center">
+                      <Check className="w-4 h-4 text-rose-gold" />
                     </div>
                     <span className="text-foreground">{item}</span>
                   </div>
@@ -344,7 +344,7 @@ export default function BeforeAfterPage() {
                 </LineButton>
                 <Link 
                   href="/pricing"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded border border-border hover:border-teal text-foreground transition-all duration-300 group"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded border border-border hover:border-rose-gold text-foreground transition-all duration-300 group"
                 >
                   View Pricing
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -366,7 +366,7 @@ export default function BeforeAfterPage() {
       </section>
 
       {/* Featured Case - Double Chin */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-cream to-teal/5">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-cream to-rose-gold/5">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Image */}
@@ -381,14 +381,14 @@ export default function BeforeAfterPage() {
 
             {/* Content */}
             <div>
-              <p className="text-xs tracking-[0.2em] text-teal uppercase mb-3">
+              <p className="text-xs tracking-[0.2em] text-rose-gold uppercase mb-3">
                 Special Program
               </p>
-              <h2 className="text-3xl md:text-4xl font-serif text-navy mb-2">
+              <h2 className="text-3xl md:text-4xl font-serif text-charcoal mb-2">
                 Double Chin Clear Program
               </h2>
               <p className="text-xl mb-4">
-                <span className="text-teal font-semibold">฿9,900</span>
+                <span className="text-rose-gold font-semibold">฿9,900</span>
                 <span className="text-sm text-muted-foreground line-through ml-2">฿15,990</span>
                 <span className="ml-2 text-sm bg-red-100 text-red-600 px-2 py-1 rounded font-medium">38% OFF</span>
               </p>
@@ -397,22 +397,22 @@ export default function BeforeAfterPage() {
               </p>
 
               <div className="space-y-4 mb-8">
-                <div className="flex items-center gap-4 p-4 bg-white rounded-lg border border-border hover:border-teal transition-colors duration-300">
-                  <div className="w-10 h-10 bg-teal text-white rounded-full flex items-center justify-center font-bold shrink-0">1</div>
+                <div className="flex items-center gap-4 p-4 bg-white rounded-lg border border-border hover:border-rose-gold transition-colors duration-300">
+                  <div className="w-10 h-10 bg-rose-gold text-white rounded-full flex items-center justify-center font-bold shrink-0">1</div>
                   <div>
                     <p className="font-medium">New Doublo 2.0</p>
                     <p className="text-sm text-muted-foreground">300 shots - HIFU lifting</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4 p-4 bg-white rounded-lg border border-border hover:border-teal transition-colors duration-300">
-                  <div className="w-10 h-10 bg-teal text-white rounded-full flex items-center justify-center font-bold shrink-0">2</div>
+                <div className="flex items-center gap-4 p-4 bg-white rounded-lg border border-border hover:border-rose-gold transition-colors duration-300">
+                  <div className="w-10 h-10 bg-rose-gold text-white rounded-full flex items-center justify-center font-bold shrink-0">2</div>
                   <div>
                     <p className="font-medium">Sisi Face Mesoi Fat</p>
                     <p className="text-sm text-muted-foreground">1 bottle - Fat dissolving</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4 p-4 bg-white rounded-lg border border-border hover:border-teal transition-colors duration-300">
-                  <div className="w-10 h-10 bg-teal text-white rounded-full flex items-center justify-center font-bold shrink-0">3</div>
+                <div className="flex items-center gap-4 p-4 bg-white rounded-lg border border-border hover:border-rose-gold transition-colors duration-300">
+                  <div className="w-10 h-10 bg-rose-gold text-white rounded-full flex items-center justify-center font-bold shrink-0">3</div>
                   <div>
                     <p className="font-medium">Lifting Botox</p>
                     <p className="text-sm text-muted-foreground">20 units - Jawline contouring</p>
@@ -433,7 +433,7 @@ export default function BeforeAfterPage() {
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-navy">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <p className="text-xs tracking-[0.2em] text-teal uppercase mb-4">
+          <p className="text-xs tracking-[0.2em] text-rose-gold uppercase mb-4">
             Not Sure Where to Start?
           </p>
           <h2 className="text-3xl md:text-4xl font-serif text-white mb-4">
@@ -450,7 +450,7 @@ export default function BeforeAfterPage() {
             </LineButton>
             <Link 
               href="/pricing"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded border border-white/30 text-white hover:bg-white hover:text-navy transition-all duration-300 w-full sm:w-auto justify-center group"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded border border-white/30 text-white hover:bg-white hover:text-charcoal transition-all duration-300 w-full sm:w-auto justify-center group"
             >
               ดูโปรโมชั่นทั้งหมด
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

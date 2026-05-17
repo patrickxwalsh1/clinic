@@ -30,9 +30,9 @@ export function Header() {
   return (
     <>
       {/* Promo Banner */}
-      <div className="bg-gradient-to-r from-teal to-teal-dark text-white py-2.5 px-4 text-center text-sm flex items-center justify-center gap-3 relative">
+      <div className="bg-gradient-to-r from-rose-gold to-rose-gold-dark text-white py-2.5 px-4 text-center text-sm flex items-center justify-center gap-3 relative">
         <span className="text-white/90 animate-pulse-soft">✦</span>
-        <span>June Special: Hydrafacial + LED <strong>฿2,900</strong></span>
+        <span>Holiday Rejuvenation: Glow Facial + Lift & Firm <strong>฿7,999</strong></span>
         <button className="bg-white/20 hover:bg-white/30 px-3 py-1 rounded text-xs transition-luxury">
           ดูรายละเอียด
         </button>
@@ -47,21 +47,35 @@ export function Header() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-16%20at%2017.41.31-TSh68SpfdoqKyV2R6cULWu9IbMVh9s.png"
-                alt="REVIZE Logo"
-                width={50}
-                height={50}
-                className="rounded-full transition-transform group-hover:scale-105"
-              />
-              <span className="text-2xl md:text-3xl tracking-wide text-navy font-sans font-semibold">REVIZE</span>
+              <div className="relative w-12 h-12 flex items-center justify-center">
+                <svg viewBox="0 0 60 60" className="w-full h-full">
+                  <path 
+                    d="M30 5 L15 25 L30 45 L45 25 Z M30 20 L22 30 L30 40 L38 30 Z" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="1.5"
+                    className="text-rose-gold"
+                  />
+                  <path 
+                    d="M20 50 L30 35 L40 50" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="1.5"
+                    className="text-rose-gold"
+                  />
+                </svg>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-xl md:text-2xl tracking-[0.15em] text-charcoal font-light">MATRIX</span>
+                <span className="text-[8px] tracking-[0.3em] text-muted-foreground">CLINIC</span>
+              </div>
             </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-8">
               <div className="relative group">
                 <button 
-                  className="flex items-center gap-1 text-sm text-foreground hover:text-teal transition-luxury link-underline py-2"
+                  className="flex items-center gap-1 text-sm text-foreground hover:text-rose-gold transition-luxury link-underline py-2"
                   onMouseEnter={() => setTreatmentsOpen(true)}
                   onMouseLeave={() => setTreatmentsOpen(false)}
                 >
@@ -78,7 +92,7 @@ export function Header() {
                       <Link
                         key={item.name}
                         href={item.href}
-                        className="block px-4 py-2.5 text-sm text-foreground hover:bg-teal/5 hover:text-teal transition-luxury"
+                        className="block px-4 py-2.5 text-sm text-foreground hover:bg-rose-gold/5 hover:text-rose-gold transition-luxury"
                         style={{ animationDelay: `${index * 50}ms` }}
                       >
                         {item.name}
@@ -87,13 +101,13 @@ export function Header() {
                   </div>
                 </div>
               </div>
-              <Link href="/before-after" className="text-sm text-foreground hover:text-teal transition-luxury link-underline py-2">
+              <Link href="/before-after" className="text-sm text-foreground hover:text-rose-gold transition-luxury link-underline py-2">
                 BEFORE & AFTER
               </Link>
-              <Link href="/injector" className="text-sm text-foreground hover:text-teal transition-luxury link-underline py-2">
+              <Link href="/injector" className="text-sm text-foreground hover:text-rose-gold transition-luxury link-underline py-2">
                 MEET YOUR INJECTOR
               </Link>
-              <Link href="/pricing" className="text-sm text-foreground hover:text-teal transition-luxury link-underline py-2">
+              <Link href="/pricing" className="text-sm text-foreground hover:text-rose-gold transition-luxury link-underline py-2">
                 PRICING
               </Link>
             </nav>
@@ -101,30 +115,30 @@ export function Header() {
             {/* Right Side */}
             <div className="hidden lg:flex items-center gap-4">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <span className="hover:text-teal transition-colors cursor-pointer">ภาษาไทย</span>
+                <span className="hover:text-rose-gold transition-colors cursor-pointer">ภาษาไทย</span>
                 <span>|</span>
                 <span className="font-medium text-foreground">EN</span>
               </div>
               <Link 
-                href="#" 
-                className="flex items-center gap-2 text-sm border border-border rounded-full px-3 py-1.5 hover:border-teal hover:shadow-md transition-luxury"
+                href="tel:0988545623" 
+                className="flex items-center gap-2 text-sm border border-border rounded-full px-3 py-1.5 hover:border-rose-gold hover:shadow-md transition-luxury"
               >
-                <span className="w-5 h-5 bg-line-green rounded-full flex items-center justify-center text-white text-[10px] font-bold">
-                  LINE
+                <span className="w-5 h-5 bg-rose-gold rounded-full flex items-center justify-center text-white text-[10px]">
+                  ☎
                 </span>
-                @revizeclinic
+                098-854-5623
               </Link>
               <Link 
-                href="#" 
-                className="bg-teal hover:bg-teal-dark text-white px-5 py-2 rounded text-sm btn-luxury"
+                href="tel:0988545623" 
+                className="bg-rose-gold hover:bg-rose-gold-dark text-white px-5 py-2 rounded text-sm btn-luxury"
               >
-                จองผ่าน LINE
+                โทรนัดหมาย
               </Link>
             </div>
 
             {/* Mobile Menu Button */}
             <button 
-              className="lg:hidden p-2 hover:bg-teal/5 rounded-lg transition-luxury"
+              className="lg:hidden p-2 hover:bg-rose-gold/5 rounded-lg transition-luxury"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <div className="relative w-6 h-6">
@@ -148,7 +162,7 @@ export function Header() {
               <Link 
                 key={item.name}
                 href={item.href} 
-                className="block py-3 text-foreground hover:text-teal hover:pl-2 transition-luxury border-b border-border/30"
+                className="block py-3 text-foreground hover:text-rose-gold hover:pl-2 transition-luxury border-b border-border/30"
                 style={{ animationDelay: `${index * 50}ms` }}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -156,11 +170,11 @@ export function Header() {
               </Link>
             ))}
             <Link 
-              href="#" 
-              className="block bg-teal text-white text-center py-3 rounded mt-4 btn-luxury"
+              href="tel:0988545623" 
+              className="block bg-rose-gold text-white text-center py-3 rounded mt-4 btn-luxury"
               onClick={() => setMobileMenuOpen(false)}
             >
-              จองผ่าน LINE
+              โทรนัดหมาย 098-854-5623
             </Link>
           </div>
         </div>

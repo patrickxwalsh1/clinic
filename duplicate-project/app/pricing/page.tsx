@@ -90,11 +90,11 @@ export default function PricingPage() {
           <div className="grid lg:grid-cols-2 gap-0">
             {/* Left Content */}
             <div className="flex flex-col justify-center px-6 sm:px-8 lg:px-12 py-12 lg:py-16 order-2 lg:order-1">
-              <p className="text-xs tracking-[0.2em] text-teal uppercase mb-4">
+              <p className="text-xs tracking-[0.2em] text-rose-gold uppercase mb-4">
                 Clear Pricing
               </p>
               
-              <h1 className="text-4xl sm:text-5xl font-serif text-navy leading-tight mb-6 text-balance">
+              <h1 className="text-4xl sm:text-5xl font-serif text-charcoal leading-tight mb-6 text-balance">
                 Transparent pricing.<br />
                 Personalized care.
               </h1>
@@ -103,17 +103,17 @@ export default function PricingPage() {
                 Our prices are straightforward and competitive. Your <strong className="text-foreground">treatment plan</strong> will be tailored to your <strong className="text-foreground">goals</strong>, facial anatomy, and the best approach for you.
               </p>
 
-              <div className="bg-teal/5 rounded-lg p-4 max-w-md border border-teal/20">
+              <div className="bg-rose-gold/5 rounded-lg p-4 max-w-md border border-rose-gold/20">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shrink-0">
-                    <span className="text-teal font-serif">?</span>
+                    <span className="text-rose-gold font-serif">?</span>
                   </div>
                   <div>
                     <p className="text-sm font-medium text-foreground mb-1">
                       Not sure what you need?
                     </p>
                     <p className="text-sm text-muted-foreground mb-3">
-                      Send us a photo on LINE for an initial recommendation from our doctor.
+                      Call us for an initial recommendation from our doctor.
                     </p>
                     <LineButton size="sm" />
                   </div>
@@ -121,22 +121,14 @@ export default function PricingPage() {
               </div>
             </div>
 
-            {/* Right Image Placeholder */}
-            <div className="relative min-h-[300px] lg:min-h-[500px] order-1 lg:order-2 bg-gradient-to-br from-teal/5 via-cream to-teal/10">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-16%20at%2017.41.31-TSh68SpfdoqKyV2R6cULWu9IbMVh9s.png"
-                    alt="REVIZE Logo"
-                    width={100}
-                    height={100}
-                    className="rounded-full mx-auto mb-6"
-                  />
-                  <span className="text-2xl tracking-wide text-navy font-sans font-semibold block mb-2">REVIZE</span>
-                  <p className="text-xs tracking-[0.2em] text-muted-foreground">CLINIC ASOK</p>
-                  <p className="text-sm text-muted-foreground mt-6">Treatment Room Placeholder</p>
-                </div>
-              </div>
+            {/* Right Image - Clinic Interior */}
+            <div className="relative min-h-[300px] lg:min-h-[500px] order-1 lg:order-2">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.43.21-VjvCXHJsCLcZ0HqjlxRZ46p9u4oLcK.png"
+                alt="MATRIX Clinic Treatments"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
@@ -162,10 +154,10 @@ export default function PricingPage() {
             {pricingCategories.map((category, index) => (
               <div key={index} className="bg-background rounded-xl p-6 border border-border">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-full bg-teal/10 flex items-center justify-center">
-                    <span className="text-teal font-serif text-lg">{category.icon}</span>
+                  <div className="w-10 h-10 rounded-full bg-rose-gold/10 flex items-center justify-center">
+                    <span className="text-rose-gold font-serif text-lg">{category.icon}</span>
                   </div>
-                  <h3 className="text-lg font-medium text-teal">
+                  <h3 className="text-lg font-medium text-rose-gold">
                     {category.title}
                   </h3>
                 </div>
@@ -186,8 +178,8 @@ export default function PricingPage() {
           </div>
 
           {/* Disclaimer */}
-          <div className="mt-8 p-4 bg-teal/5 rounded-lg flex items-start gap-3 border border-teal/20">
-            <Info className="w-5 h-5 text-teal shrink-0 mt-0.5" />
+          <div className="mt-8 p-4 bg-rose-gold/5 rounded-lg flex items-start gap-3 border border-rose-gold/20">
+            <Info className="w-5 h-5 text-rose-gold shrink-0 mt-0.5" />
             <p className="text-sm text-muted-foreground">
               Prices vary depending on the product, amount used, treatment area, and individual concerns. Final price will be confirmed after consultation with our doctor.
             </p>
@@ -196,33 +188,28 @@ export default function PricingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-teal/5 to-teal/10">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-rose-gold/5 to-rose-gold/10">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Left - Image & CTA */}
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-teal/10 to-white flex items-center justify-center">
-                <div className="text-center">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-16%20at%2017.41.31-TSh68SpfdoqKyV2R6cULWu9IbMVh9s.png"
-                    alt="REVIZE Logo"
-                    width={60}
-                    height={60}
-                    className="rounded-full mx-auto mb-3"
-                  />
-                  <span className="text-xl tracking-wide text-navy font-sans font-semibold">REVIZE</span>
-                  <p className="text-xs tracking-[0.2em] text-muted-foreground">CLINIC</p>
-                </div>
+              <div className="aspect-[4/3] rounded-2xl overflow-hidden">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/8-BnoouyqZ4eVLkmN7pw6zQw9pUM5Uc5.png"
+                  alt="MATRIX Clinic Interior"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-white rounded-xl p-6 shadow-lg max-w-xs hidden lg:block">
-                <p className="text-lg font-serif text-navy mb-2">
+                <p className="text-lg font-serif text-charcoal mb-2">
                   Not sure where to start?
                 </p>
-                <h3 className="text-2xl font-serif text-navy mb-3">
+                <h3 className="text-2xl font-serif text-charcoal mb-3">
                   We&apos;ll guide you.
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Send us a photo on LINE and our doctor will recommend the best treatment plan for your goals and budget.
+                  Call us and our doctor will recommend the best treatment plan for your goals and budget.
                 </p>
                 <LineButton size="md" />
               </div>
@@ -232,8 +219,8 @@ export default function PricingPage() {
             <div className="grid sm:grid-cols-2 gap-4 lg:pl-12">
               {valueProps.map((prop, index) => (
                 <div key={index} className="bg-white rounded-lg p-4 border border-border">
-                  <prop.icon className="w-8 h-8 text-teal mb-3" />
-                  <p className="text-xs tracking-[0.1em] text-teal uppercase mb-1">
+                  <prop.icon className="w-8 h-8 text-rose-gold mb-3" />
+                  <p className="text-xs tracking-[0.1em] text-rose-gold uppercase mb-1">
                     {prop.title}
                   </p>
                   <p className="text-sm text-muted-foreground">

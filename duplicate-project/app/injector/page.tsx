@@ -62,12 +62,12 @@ export default function InjectorPage() {
           <div className="grid lg:grid-cols-2 gap-0 min-h-[calc(100vh-140px)]">
             {/* Left Content */}
             <div className="flex flex-col justify-center px-6 sm:px-8 lg:px-12 py-12 lg:py-16 order-2 lg:order-1 relative z-10">
-              <p className="text-xs tracking-[0.3em] text-teal uppercase mb-4 flex items-center gap-2 opacity-0 animate-fade-in-up">
-                <span className="w-8 h-[1px] bg-teal"></span>
+              <p className="text-xs tracking-[0.3em] text-rose-gold uppercase mb-4 flex items-center gap-2 opacity-0 animate-fade-in-up">
+                <span className="w-8 h-[1px] bg-rose-gold"></span>
                 Doctor-Led. Natural Results.
               </p>
               
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-navy leading-[1.1] mb-6 text-balance opacity-0 animate-fade-in-up delay-100">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-charcoal leading-[1.1] mb-6 text-balance opacity-0 animate-fade-in-up delay-100">
                 A conservative approach to injectables.
               </h1>
               
@@ -79,12 +79,12 @@ export default function InjectorPage() {
                 Every treatment plan is personalized, thoughtful, and designed for long-term harmony.
               </p>
 
-              <div className="border-l-2 border-teal pl-6 mb-8 opacity-0 animate-fade-in-up delay-400">
-                <h3 className="text-xl font-serif text-teal mb-1">
-                  Dr. Lalinda Wongsakul
+              <div className="border-l-2 border-rose-gold pl-6 mb-8 opacity-0 animate-fade-in-up delay-400">
+                <h3 className="text-xl font-serif text-rose-gold mb-1">
+                  MATRIX Clinic Medical Team
                 </h3>
                 <p className="text-sm text-muted-foreground uppercase tracking-wider">
-                  Medical Aesthetic Doctor
+                  Medical Aesthetic Doctors
                 </p>
                 <p className="text-sm text-muted-foreground">
                   15+ Years of Experience
@@ -97,7 +97,7 @@ export default function InjectorPage() {
                     key={index} 
                     className="text-center p-4 bg-white rounded-lg border border-border card-luxury"
                   >
-                    <credential.icon className="w-8 h-8 mx-auto mb-2 text-teal" />
+                    <credential.icon className="w-8 h-8 mx-auto mb-2 text-rose-gold" />
                     <p className="text-xs font-medium text-foreground">{credential.title}</p>
                     <p className="text-xs text-muted-foreground">{credential.description}</p>
                   </div>
@@ -109,8 +109,8 @@ export default function InjectorPage() {
             <div className="relative min-h-[500px] lg:min-h-full order-1 lg:order-2 opacity-0 animate-fade-in delay-200">
               <div className="absolute inset-0 img-zoom">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/476150325_1077680777731051_3797646050005656885_n-JCPparzS9I3hqsxc8jlcr1QmMcIoaI.jpg"
-                  alt="Doctor with patient at REVIZE Clinic"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/482139185_1057097646224927_7823904874730714511_n-qJ2vl7nFqAEOAeF9sgLz6s8bsIGXKi.jpg"
+                  alt="MATRIX Clinic - The Freedom of Beauty"
                   fill
                   className="object-cover"
                   priority
@@ -123,11 +123,11 @@ export default function InjectorPage() {
                 <div className="space-y-3">
                   {valueProps.map((prop, index) => (
                     <div key={index} className="flex items-start gap-3 group">
-                      <div className="w-8 h-8 bg-teal/10 rounded-full flex items-center justify-center shrink-0 group-hover:bg-teal/20 transition-luxury">
-                        <Check className="w-4 h-4 text-teal" />
+                      <div className="w-8 h-8 bg-rose-gold/10 rounded-full flex items-center justify-center shrink-0 group-hover:bg-rose-gold/20 transition-luxury">
+                        <Check className="w-4 h-4 text-rose-gold" />
                       </div>
                       <div>
-                        <p className="text-sm font-medium text-teal">{prop.title}</p>
+                        <p className="text-sm font-medium text-rose-gold">{prop.title}</p>
                         <p className="text-xs text-muted-foreground">{prop.description}</p>
                       </div>
                     </div>
@@ -139,7 +139,7 @@ export default function InjectorPage() {
         </div>
 
         {/* Decorative Elements */}
-        <div className="absolute top-20 left-10 w-64 h-64 bg-teal/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute top-20 left-10 w-64 h-64 bg-rose-gold/5 rounded-full blur-3xl pointer-events-none"></div>
       </section>
 
       {/* Philosophy Section */}
@@ -150,8 +150,8 @@ export default function InjectorPage() {
             <div className="relative order-2 lg:order-1">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl img-zoom">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-OkHFi7reDgbMNcin0BRiOTwLgERVGt.png"
-                  alt="REVIZE Clinic Interior"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/8-BnoouyqZ4eVLkmN7pw6zQw9pUM5Uc5.png"
+                  alt="MATRIX Clinic Interior"
                   fill
                   className="object-cover"
                 />
@@ -160,11 +160,11 @@ export default function InjectorPage() {
 
             {/* Content */}
             <div className="order-1 lg:order-2">
-              <p className="text-xs tracking-[0.3em] text-teal uppercase mb-4 flex items-center gap-2">
-                <span className="w-8 h-[1px] bg-teal"></span>
+              <p className="text-xs tracking-[0.3em] text-rose-gold uppercase mb-4 flex items-center gap-2">
+                <span className="w-8 h-[1px] bg-rose-gold"></span>
                 My philosophy
               </p>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-navy mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal mb-6">
                 Enhance, not change.
               </h2>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
@@ -174,8 +174,8 @@ export default function InjectorPage() {
               <ul className="space-y-4">
                 {philosophyPoints.map((point, index) => (
                   <li key={index} className="flex items-center gap-4 text-muted-foreground group">
-                    <div className="w-8 h-8 rounded-full border border-teal flex items-center justify-center group-hover:bg-teal/10 transition-luxury">
-                      <Check className="w-4 h-4 text-teal" />
+                    <div className="w-8 h-8 rounded-full border border-rose-gold flex items-center justify-center group-hover:bg-rose-gold/10 transition-luxury">
+                      <Check className="w-4 h-4 text-rose-gold" />
                     </div>
                     <span className="group-hover:text-foreground transition-colors">{point}</span>
                   </li>
@@ -187,12 +187,12 @@ export default function InjectorPage() {
       </section>
 
       {/* Expertise Section */}
-      <section className="py-20 md:py-28 bg-gradient-to-br from-teal/5 via-background to-teal/5">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-rose-gold/5 via-background to-rose-gold/5">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <p className="text-xs tracking-[0.3em] text-teal uppercase mb-4 text-center flex items-center justify-center gap-2">
-            <span className="w-8 h-[1px] bg-teal"></span>
+          <p className="text-xs tracking-[0.3em] text-rose-gold uppercase mb-4 text-center flex items-center justify-center gap-2">
+            <span className="w-8 h-[1px] bg-rose-gold"></span>
             Areas of Expertise
-            <span className="w-8 h-[1px] bg-teal"></span>
+            <span className="w-8 h-[1px] bg-rose-gold"></span>
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-12">
@@ -201,8 +201,8 @@ export default function InjectorPage() {
                 key={index}
                 className="text-center p-6 bg-white rounded-xl border border-border card-luxury"
               >
-                <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-teal/10 flex items-center justify-center">
-                  <span className="text-teal font-serif text-2xl">{area.icon}</span>
+                <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-rose-gold/10 flex items-center justify-center">
+                  <span className="text-rose-gold font-serif text-2xl">{area.icon}</span>
                 </div>
                 <p className="text-sm font-medium text-foreground">{area.title}</p>
                 <p className="text-xs text-muted-foreground">{area.subtitle}</p>
@@ -215,10 +215,10 @@ export default function InjectorPage() {
       {/* CTA Section */}
       <section className="py-20 md:py-28 bg-white">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="bg-gradient-to-br from-teal/5 to-teal/10 rounded-2xl p-8 md:p-12">
+          <div className="bg-gradient-to-br from-rose-gold/5 to-rose-gold/10 rounded-2xl p-8 md:p-12">
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div>
-                <h2 className="text-2xl md:text-3xl font-serif text-navy mb-4">
+                <h2 className="text-2xl md:text-3xl font-serif text-charcoal mb-4">
                   Ready to create a plan that&apos;s right for you?
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
@@ -229,7 +229,7 @@ export default function InjectorPage() {
                 <LineButton size="lg" className="w-full justify-center btn-luxury" />
                 <Link 
                   href="/contact"
-                  className="flex items-center justify-center gap-2 w-full px-6 py-3 rounded border border-border hover:border-teal bg-white text-foreground transition-luxury group"
+                  className="flex items-center justify-center gap-2 w-full px-6 py-3 rounded border border-border hover:border-rose-gold bg-white text-foreground transition-luxury group"
                 >
                   Book a Consultation
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

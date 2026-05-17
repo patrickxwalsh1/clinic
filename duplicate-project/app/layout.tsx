@@ -16,9 +16,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'REVIZE Clinic Asok | Premium Aesthetic Care in Bangkok',
-  description: 'Doctor-led Botox, filler, laser, and skin-rejuvenation treatments designed to enhance your unique features with subtle, natural results. Located at Times Square, Asok.',
-  keywords: 'aesthetic clinic, botox, filler, laser treatment, skin rejuvenation, bangkok, asok, revize',
+  title: 'MATRIX Clinic | The Freedom of Beauty - Premium Aesthetic Care Bangkok',
+  description: 'Doctor-led Botox, filler, laser, and skin-rejuvenation treatments designed to enhance your unique features with subtle, natural results. Located at Times Square Building, Sukhumvit.',
+  keywords: 'aesthetic clinic, botox, filler, laser treatment, skin rejuvenation, bangkok, sukhumvit, matrix clinic, freedom of beauty',
 }
 
 export default function RootLayout({
