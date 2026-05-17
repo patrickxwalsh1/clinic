@@ -129,10 +129,13 @@ export function Header() {
                 098-854-5623
               </Link>
               <Link 
-                href="tel:0988545623" 
-                className="bg-rose-gold hover:bg-rose-gold-dark text-white px-5 py-2 rounded text-sm btn-luxury"
+                href="https://line.me/R/ti/p/@matrixclinic" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#06C755] hover:bg-[#05a847] text-white px-5 py-2 rounded text-sm btn-luxury flex items-center gap-2"
               >
-                โทรนัดหมาย
+                <span className="w-4 h-4 bg-white rounded flex items-center justify-center text-[#06C755] text-[7px] font-bold">LINE</span>
+                จองผ่าน LINE
               </Link>
             </div>
 
@@ -170,11 +173,16 @@ export function Header() {
               </Link>
             ))}
             <Link 
-              href="tel:0988545623" 
-              className="block bg-rose-gold text-white text-center py-3 rounded mt-4 btn-luxury"
+              href="https://line.me/R/ti/p/@matrixclinic" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-[#06C755] text-white text-center py-3 rounded mt-4 btn-luxury"
               onClick={() => setMobileMenuOpen(false)}
             >
-              โทรนัดหมาย 098-854-5623
+              <span className="inline-flex items-center gap-2">
+                <span className="w-4 h-4 bg-white rounded flex items-center justify-center text-[#06C755] text-[7px] font-bold">LINE</span>
+                จองผ่าน LINE
+              </span>
             </Link>
           </div>
         </div>

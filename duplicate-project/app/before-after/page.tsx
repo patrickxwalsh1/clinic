@@ -15,52 +15,52 @@ const results = [
   {
     id: 1,
     category: "Filler",
-    title: "Chin Filler",
-    titleThai: "ฟิลเลอร์คาง",
-    description: "ช่วยให้รูปหน้าให้สมดุลขึ้น คางได้สัดส่วน รูปหน้าเรียว สวยละมุน",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/659014755_948772930869003_6740018651243625603_n-AcCedmHCdriEy4n62TLj2Qce0K3obY.jpg",
-    benefits: ["Balanced Profile", "V-Shape Face", "Natural Results"],
-    date: "November 2025",
+    title: "Neura Program",
+    titleThai: "โปรแกรม Neura 4cc",
+    description: "ฟิลเลอร์กระชับรูปหน้า เติมเต็มร่องแก้ม ผลลัพธ์เป็นธรรมชาติ",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.45.38-ycls4AGsJmFp33hisSoseNxANitwNn.png",
+    benefits: ["Natural Results", "V-Shape Face", "Long-lasting"],
+    date: "July 2025",
   },
   {
     id: 2,
-    category: "Under Eye",
-    title: "Under Eyes Filler",
-    titleThai: "ฟิลเลอร์ใต้ตา",
-    description: "Brighten. Smooth. Look Rested. Just 1cc, Big Difference.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-16%20at%2017.39.35.png-4S6rOVqXzbbpsIi6DuesHGOSFOwG9E.jpeg",
+    category: "Filler",
+    title: "Filler ร่องแก้ม",
+    titleThai: "ฟิลเลอร์ร่องแก้ม 2cc",
+    description: "เติมเต็มร่องแก้ม หน้าเรียว สวยได้สัดส่วน",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.45.53-RAcrOnallJeaC4CppIrhPa3KMqlrQQ.png",
     benefits: ["Immediate Results", "No Downtime", "Natural Look"],
     date: "May 2026",
   },
   {
     id: 3,
-    category: "Skin",
-    title: "Skin Rejuvenation",
-    titleThai: "รักษาผิวหน้า",
-    description: "รีวิวจากผู้ใช้บริการจริง - ผิวเรียบเนียนขึ้นใน 6 สัปดาห์",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-16%20at%2018.13.09-tkFlEhEyFNqP5F86ezFAAwnB2VlNl1.png",
-    benefits: ["Smoother Texture", "Reduced Pores", "Even Tone"],
-    date: "September - October 2025",
+    category: "Filler",
+    title: "Juvé Program",
+    titleThai: "โปรแกรม Juvé 2cc",
+    description: "ฟิลเลอร์เติมเต็ม กระชับรูปหน้า สำหรับผู้ชาย",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.45.14-QKz4SMhuQqDAZbQFXocqagHd4r01nY.png",
+    benefits: ["For Men", "Natural Look", "Subtle Enhancement"],
+    date: "August 2025",
   },
   {
     id: 4,
-    category: "Sculptra",
-    title: "Sculptra Collagen",
-    titleThai: "สคัลป์ตร้า",
-    description: "ปรับรูปหน้า กระชับผิว ด้วย Collagen Biostimulator",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-16%20at%2017.47.49-8BUSTG51yKUg8vczwf4eNFSotmOP8b.png",
-    benefits: ["4-Month Results", "Collagen Boost", "Long-lasting"],
-    date: "June - October 2025",
+    category: "Skin",
+    title: "Sculpt & Collagen",
+    titleThai: "ยกกระชับ",
+    description: "Long-lasting lift & non-surgical tightening",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.44.45-LaTRcGZBu1oyP1036fSCeWOX7Fddxm.png",
+    benefits: ["Lift & Firm", "Tighten Skin", "Long-lasting"],
+    date: "June 2025",
   },
   {
     id: 5,
-    category: "Double Chin",
-    title: "Double Chin Clear",
-    titleThai: "ลดเหนียง",
-    description: "3 in 1 Program: Doublo 2.0, Mesoi Fat, Lifting Botox",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-16%20at%2017.48.28-rHMqVnEz62PkLYG7M3DxrcqCOKW68V.png",
-    benefits: ["V-Line Jaw", "Fat Reduction", "Lifting Effect"],
-    date: "April - May 2026",
+    category: "Skin",
+    title: "Pico Laser",
+    titleThai: "บอกลารอยสิว",
+    description: "รักษารอยสิว ผิวเรียบเนียน เพียง ฿1,899",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.49.38-CFHPFIbcZejUuAIwF4k80fNGAfiCPp.png",
+    benefits: ["Acne Scars", "Even Tone", "Smooth Skin"],
+    date: "May - July 2025",
   },
 ]
 
@@ -122,11 +122,11 @@ export default function BeforeAfterPage() {
               </div>
             </div>
 
-            {/* Right Image - Chin Filler (new featured image) */}
+            {/* Right Image - Neura Program (new featured image) */}
             <div className="relative min-h-[400px] lg:min-h-[550px] order-1 lg:order-2 animate-fade-in">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/659014755_948772930869003_6740018651243625603_n-AcCedmHCdriEy4n62TLj2Qce0K3obY.jpg"
-                alt="Chin Filler Before and After"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.45.38-ycls4AGsJmFp33hisSoseNxANitwNn.png"
+                alt="Neura Program Before and After"
                 fill
                 className="object-cover"
                 priority
@@ -155,9 +155,9 @@ export default function BeforeAfterPage() {
                 Featured Program
               </p>
               <h2 className="text-2xl md:text-3xl font-serif text-white">
-                Chin Filler - ฟิลเลอร์คาง
+                Neura Program - 4cc
               </h2>
-              <p className="text-white/70 mt-2">รูปหน้าเรียว สวยละมุน ได้สัดส่วน</p>
+              <p className="text-white/70 mt-2">กระชับรูปหน้า เติมเต็มร่องแก้ม ผลลัพธ์เป็นธรรมชาติ</p>
             </div>
             <div className="flex flex-wrap items-center gap-4 md:gap-8">
               <div className="flex items-center gap-2 text-white/80">
@@ -251,15 +251,15 @@ export default function BeforeAfterPage() {
         </div>
       </section>
 
-      {/* Featured Case - Under Eye Filler */}
+      {/* Featured Case - Filler Program */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-cream to-rose-gold/5">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Image */}
             <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl group">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-16%20at%2017.39.35.png-4S6rOVqXzbbpsIi6DuesHGOSFOwG9E.jpeg"
-                alt="Under Eyes Filler - Before and After"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.45.53-RAcrOnallJeaC4CppIrhPa3KMqlrQQ.png"
+                alt="Filler ร่องแก้ม - Before and After"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -271,14 +271,14 @@ export default function BeforeAfterPage() {
                 Featured Treatment
               </p>
               <h2 className="text-3xl md:text-4xl font-serif text-charcoal mb-4">
-                Under Eyes Filler Program
+                Filler ร่องแก้ม Program
               </h2>
               <p className="text-xl text-rose-gold font-medium mb-2">
-                1cc HA Filler
+                2cc HA Filler
               </p>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Brighten. Smooth. Look Rested. Just 1cc makes a big difference.
-                Immediate results with little to no downtime.
+                เติมเต็มร่องแก้ม หน้าเรียว สวยได้สัดส่วน
+                ผลลัพธ์ทันทีหลังทำ ไม่ต้องพักฟื้น
               </p>
 
               <div className="grid grid-cols-3 gap-4 mb-8">
@@ -307,7 +307,7 @@ export default function BeforeAfterPage() {
         </div>
       </section>
 
-      {/* Featured Case - Skin Rejuvenation */}
+      {/* Featured Case - Pico Laser */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -317,18 +317,18 @@ export default function BeforeAfterPage() {
                 Skin Treatment
               </p>
               <h2 className="text-3xl md:text-4xl font-serif text-charcoal mb-4">
-                Skin Rejuvenation
+                Pico Laser
               </h2>
               <p className="text-xl text-rose-gold font-medium mb-2">
-                รีวิวจากผู้ใช้บริการจริง
+                บอกลารอยสิว เพียง ฿1,899
               </p>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                See visible improvement in skin texture in just 6 weeks. 
-                Smoother, brighter skin with reduced pore size and even tone.
+                รักษารอยสิว ผิวเรียบเนียน ผลลัพธ์เห็นได้ชัด
+                ลดเลือนรอยดำ รอยแดง จากสิว
               </p>
 
               <div className="space-y-3 mb-8">
-                {["Smoother skin texture", "Reduced pore size", "Even skin tone", "Natural glow"].map((item, i) => (
+                {["Acne scar treatment", "Reduce dark spots", "Even skin tone", "Smooth texture"].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <div className="w-6 h-6 rounded-full bg-rose-gold/10 flex items-center justify-center">
                       <Check className="w-4 h-4 text-rose-gold" />
@@ -355,8 +355,8 @@ export default function BeforeAfterPage() {
             {/* Image */}
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2 group">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-16%20at%2018.13.09-tkFlEhEyFNqP5F86ezFAAwnB2VlNl1.png"
-                alt="Skin Rejuvenation - Before and After"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.49.38-CFHPFIbcZejUuAIwF4k80fNGAfiCPp.png"
+                alt="Pico Laser - Before and After"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -365,15 +365,15 @@ export default function BeforeAfterPage() {
         </div>
       </section>
 
-      {/* Featured Case - Double Chin */}
+      {/* Featured Case - Sculpt & Collagen */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-cream to-rose-gold/5">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Image */}
             <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl group">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-16%20at%2017.48.28-rHMqVnEz62PkLYG7M3DxrcqCOKW68V.png"
-                alt="Double Chin Program Before and After"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.44.45-LaTRcGZBu1oyP1036fSCeWOX7Fddxm.png"
+                alt="Sculpt & Collagen Program Before and After"
                 fill
                 className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
               />
@@ -385,24 +385,38 @@ export default function BeforeAfterPage() {
                 Special Program
               </p>
               <h2 className="text-3xl md:text-4xl font-serif text-charcoal mb-2">
-                Double Chin Clear Program
+                Sculpt & Collagen Program
               </h2>
               <p className="text-xl mb-4">
-                <span className="text-rose-gold font-semibold">฿9,900</span>
-                <span className="text-sm text-muted-foreground line-through ml-2">฿15,990</span>
-                <span className="ml-2 text-sm bg-red-100 text-red-600 px-2 py-1 rounded font-medium">38% OFF</span>
+                <span className="text-rose-gold font-semibold">Lift & Tighten</span>
               </p>
               <p className="text-muted-foreground mb-8">
-                Complete 3-in-1 program for V-line jawline with visible results in just 1 month.
+                Long-lasting lift with non-surgical tightening. Reshape contours, firm skin, natural lifting results.
               </p>
 
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-4 p-4 bg-white rounded-lg border border-border hover:border-rose-gold transition-colors duration-300">
                   <div className="w-10 h-10 bg-rose-gold text-white rounded-full flex items-center justify-center font-bold shrink-0">1</div>
                   <div>
-                    <p className="font-medium">New Doublo 2.0</p>
-                    <p className="text-sm text-muted-foreground">300 shots - HIFU lifting</p>
+                    <p className="font-medium">Long-lasting Lift</p>
+                    <p className="text-sm text-muted-foreground">Glow facial - Lift & firm</p>
                   </div>
+                </div>
+                <div className="flex items-center gap-4 p-4 bg-white rounded-lg border border-border hover:border-rose-gold transition-colors duration-300">
+                  <div className="w-10 h-10 bg-rose-gold text-white rounded-full flex items-center justify-center font-bold shrink-0">2</div>
+                  <div>
+                    <p className="font-medium">Non-surgical Tightening</p>
+                    <p className="text-sm text-muted-foreground">Reshape contours - Firm skin</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 p-4 bg-white rounded-lg border border-border hover:border-rose-gold transition-colors duration-300">
+                  <div className="w-10 h-10 bg-rose-gold text-white rounded-full flex items-center justify-center font-bold shrink-0">3</div>
+                  <div>
+                    <p className="font-medium">Natural Lifting</p>
+                    <p className="text-sm text-muted-foreground">Smooth fine lines</p>
+                  </div>
+                </div>
+              </div>
                 </div>
                 <div className="flex items-center gap-4 p-4 bg-white rounded-lg border border-border hover:border-rose-gold transition-colors duration-300">
                   <div className="w-10 h-10 bg-rose-gold text-white rounded-full flex items-center justify-center font-bold shrink-0">2</div>
