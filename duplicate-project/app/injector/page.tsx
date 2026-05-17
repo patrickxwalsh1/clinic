@@ -109,10 +109,10 @@ export default function InjectorPage() {
             <div className="relative min-h-[500px] lg:min-h-full order-1 lg:order-2 opacity-0 animate-fade-in delay-200">
               <div className="absolute inset-0 img-zoom">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/482139185_1057097646224927_7823904874730714511_n-qJ2vl7nFqAEOAeF9sgLz6s8bsIGXKi.jpg"
-                  alt="MATRIX Clinic - The Freedom of Beauty"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.55.13%201-oE1cV4LsD3e5hsIwFvAZiXIbSNa5rf.png"
+                  alt="MATRIX Clinic Doctor"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-background/30 lg:to-background/50"></div>

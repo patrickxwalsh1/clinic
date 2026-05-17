@@ -65,9 +65,9 @@ export function Header() {
                   />
                 </svg>
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col items-center">
                 <span className="text-xl md:text-2xl tracking-[0.15em] text-charcoal font-light">MATRIX</span>
-                <span className="text-[8px] tracking-[0.3em] text-muted-foreground">CLINIC</span>
+                <span className="text-[8px] tracking-[0.3em] text-muted-foreground text-center">CLINIC</span>
               </div>
             </Link>
 

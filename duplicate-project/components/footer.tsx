@@ -45,9 +45,9 @@ export function Footer() {
                   />
                 </svg>
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col items-center">
                 <span className="text-xl tracking-[0.15em] text-charcoal font-light">MATRIX</span>
-                <span className="text-[7px] tracking-[0.3em] text-muted-foreground">CLINIC</span>
+                <span className="text-[7px] tracking-[0.3em] text-muted-foreground text-center">CLINIC</span>
               </div>
             </Link>
             <p className="text-xs tracking-[0.15em] text-rose-gold uppercase mb-2">The Freedom of Beauty</p>
@@ -180,13 +180,15 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Floating Call Button */}
+      {/* Floating LINE Button */}
       <Link 
-        href="tel:0988545623" 
-        className="fixed bottom-6 right-6 bg-rose-gold text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 z-50 btn-luxury hover:shadow-xl"
+        href="https://line.me/R/ti/p/@matrixclinic" 
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-line-green text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 z-50 btn-luxury hover:shadow-xl"
       >
-        <Phone className="w-5 h-5" />
-        <span className="text-sm font-medium">โทรนัดหมาย</span>
+        <span className="w-5 h-5 bg-white rounded flex items-center justify-center text-line-green text-[7px] font-bold">LINE</span>
+        <span className="text-sm font-medium">จองผ่าน LINE</span>
       </Link>
     </footer>
   )

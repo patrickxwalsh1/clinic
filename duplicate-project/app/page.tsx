@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer"
 import { LineButton } from "@/components/line-button"
 import { SectionHeader } from "@/components/section-header"
 import { TestimonialCard } from "@/components/testimonial-card"
-import { Star, MapPin, ArrowRight, Sparkles, Shield, Heart, ChevronLeft, ChevronRight, Phone } from "lucide-react"
+import { Star, MapPin, ArrowRight, Sparkles, Shield, Heart, ChevronLeft, ChevronRight } from "lucide-react"
 
 const heroSlides = [
   {
@@ -45,8 +45,8 @@ const beforeAfterResults = [
     hasImage: true 
   },
   { 
-    title: "Acne Treatment", 
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.44.58-84gfwT3Z8zs82GIla8zF4w6tbZHmWh.png",
+    title: "Pico Laser", 
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202569-05-17%20at%2016.49.38-CFHPFIbcZejUuAIwF4k80fNGAfiCPp.png",
     hasImage: true 
   },
 ]
@@ -120,13 +120,7 @@ export default function HomePage() {
               </div>
 
               <div className="flex flex-wrap gap-4 mb-8 animate-fade-in-up delay-400">
-                <Link 
-                  href="tel:0988545623" 
-                  className="inline-flex items-center gap-2 bg-rose-gold hover:bg-rose-gold-dark text-white px-6 py-3 rounded btn-luxury"
-                >
-                  <Phone className="w-4 h-4" />
-                  โทรนัดหมาย 098-854-5623
-                </Link>
+                <LineButton size="lg" />
                 <Link 
                   href="/before-after" 
                   className="inline-flex items-center gap-2 px-6 py-3 rounded border border-border hover:border-rose-gold bg-white text-foreground transition-luxury group"
